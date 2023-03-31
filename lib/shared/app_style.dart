@@ -5,6 +5,11 @@ const Color canvasColor = Color(0xffFFFFFF);
 
 //Colors: Container
 const Color borderLightGrey = Color(0xffededed);
+const Color containerColorCyan = Color(0xffA0E3DD);
+const Color containerColorLightYellow = Color(0xffFDF1DE);
+const Color containerColorDarkGray = Color(0xffCAD5DD);
+const Color containerColorLightGray = Color(0xffF4F4F7);
+const Color containerColorLightGreen = Color(0xffDFE8C5);
 
 //Color: Container
 Color containerColor = const Color.fromARGB(255, 237, 240, 240);
