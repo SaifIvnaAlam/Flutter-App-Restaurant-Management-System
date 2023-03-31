@@ -10,9 +10,11 @@ const Color containerColorLightYellow = Color(0xffFDF1DE);
 const Color containerColorDarkGray = Color(0xffCAD5DD);
 const Color containerColorLightGray = Color(0xffF4F4F7);
 const Color containerColorLightGreen = Color(0xffDFE8C5);
+const Color containerColorLight = Color(0xffE5E5E5);
 
-//Color: Container
-Color containerColor = const Color.fromARGB(255, 237, 240, 240);
+//Color: text
+const Color textColorYellow = Color(0xffEDA813);
+
 //Padding : App
 const double appPaddingHorizontal = 20.0;
 
