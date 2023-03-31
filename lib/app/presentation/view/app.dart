@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../home/view/home_page.dart';
+import '../../../dashboard/presentation/view/dashboard_page.dart';
 import '../../../shared/app_style.dart';
 
 class App extends StatelessWidget {
@@ -10,10 +10,11 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
           fontFamily: GoogleFonts.montserrat().fontFamily,
           canvasColor: canvasColor),
-      home: const HomePage(),
+      home: const DashboardPage(),
     );
   }
 }
