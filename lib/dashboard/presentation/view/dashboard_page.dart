@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../shared/widgets/side_bar.dart';
-import '../widgets/dashboard_data_widget.dart';
+import '../components/dashboard_data_widget.dart';
+import '../components/order_list.dart';
+import '../components/user_info.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
@@ -12,7 +14,25 @@ class DashboardPage extends StatelessWidget {
         body: SafeArea(
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [const SideBar(), DashboardDataWidget()],
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          const SideBar(),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: const [
+                  DashboardStatistics(),
+                  UserInfo(),
+                ],
+              ),
+              const SizedBox(
+                height: 5,
+              ),
+              OrderList(),
+            ],
+          ),
+        ],
       ),
     ));
   }
