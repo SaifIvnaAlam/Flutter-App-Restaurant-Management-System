@@ -46,7 +46,7 @@ class UserInfo extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(
-                    width: 20,
+                    width: 10,
                   ),
                   CircleAvatar(
                     maxRadius: 40,
