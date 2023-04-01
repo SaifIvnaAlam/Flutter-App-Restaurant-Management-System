@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../shared/widgets/side_bar.dart';
 import '../components/dashboard_data_widget.dart';
+import '../components/new_order_container.dart';
 import '../components/order_list.dart';
 import '../components/user_info.dart';
 
@@ -29,7 +30,15 @@ class DashboardPage extends StatelessWidget {
               const SizedBox(
                 height: 5,
               ),
-              OrderList(),
+              Row(
+                children: const [
+                  OrderList(),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  NewOrderContainer(),
+                ],
+              ),
             ],
           ),
         ],
