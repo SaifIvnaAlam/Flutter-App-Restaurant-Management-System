@@ -3,14 +3,18 @@ import 'package:flutter/material.dart';
 import '../app_style.dart';
 
 class SidebarItemContainer extends StatelessWidget {
-  const SidebarItemContainer(
-      {super.key, required this.icon, required this.text});
+  SidebarItemContainer(
+      {super.key,
+      required this.icon,
+      required this.text,
+      this.isSelected = false});
   final IconData icon;
   final String text;
+  bool? isSelected;
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: sideBarItemMargin),
+      margin: EdgeInsets.symmetric(vertical: sideBarItemMargin),
       height: 100,
       width: double.infinity,
       decoration: BoxDecoration(
@@ -22,7 +26,7 @@ class SidebarItemContainer extends StatelessWidget {
             spreadRadius: 5.0,
           ),
         ],
-        color: Colors.white,
+        color: isSelected == true ? containerColorGreen : Colors.white,
         borderRadius: BorderRadius.circular(containerRadius),
       ),
       child: Column(
@@ -31,13 +35,16 @@ class SidebarItemContainer extends StatelessWidget {
           Icon(
             icon,
             size: 30,
+            color: isSelected == true ? Colors.white : Colors.black,
           ),
           const SizedBox(
             height: 5,
           ),
           Text(
             text,
-            style: montserratSemiBold,
+            style: montserratSemiBold.copyWith(
+              color: isSelected == true ? Colors.white : Colors.black,
+            ),
           )
         ],
       ),
