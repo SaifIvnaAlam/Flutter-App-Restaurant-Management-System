@@ -86,8 +86,8 @@ class OrderTile extends StatelessWidget {
             ),
             ListButton(
               onTap: () {},
-              text: "Mark as Prepared",
-              type: ButtonType.secondary,
+              text: "Prepared",
+              type: ButtonType.primary,
             )
           ],
         ),
