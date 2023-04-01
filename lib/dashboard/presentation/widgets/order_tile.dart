@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../shared/app_style.dart';
+import 'list_button.dart';
 
 class OrderTile extends StatelessWidget {
   const OrderTile({super.key});
@@ -83,7 +84,11 @@ class OrderTile extends StatelessWidget {
                     style: montserratBold.copyWith(color: textColorYellow)),
               ],
             ),
-            Text("Mark as Prepared")
+            ListButton(
+              onTap: () {},
+              text: "Mark as Prepared",
+              type: ButtonType.secondary,
+            )
           ],
         ),
       ),
