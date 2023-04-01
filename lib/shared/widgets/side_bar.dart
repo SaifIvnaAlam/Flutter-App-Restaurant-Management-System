@@ -31,35 +31,36 @@ class SideBar extends StatelessWidget {
                           fit: BoxFit.fitHeight,
                           image: NetworkImage(sidebarImage))),
                 ),
-                const SidebarItemContainer(
+                SidebarItemContainer(
+                  isSelected: true,
                   icon: FontAwesomeIcons.leaf,
                   text: "Dashboard",
                 ),
-                const SidebarItemContainer(
+                SidebarItemContainer(
                   icon: FontAwesomeIcons.squareCheck,
                   text: "Inventory",
                 ),
-                const SidebarItemContainer(
+                SidebarItemContainer(
                   icon: FontAwesomeIcons.newspaper,
                   text: "New Orders",
                 ),
-                const SidebarItemContainer(
+                SidebarItemContainer(
                   icon: FontAwesomeIcons.peopleGroup,
                   text: "Customers",
                 ),
-                const SidebarItemContainer(
+                SidebarItemContainer(
                   icon: Icons.reviews_outlined,
                   text: "Reviews",
                 ),
-                const SidebarItemContainer(
+                SidebarItemContainer(
                   icon: Icons.mic_external_on,
                   text: "Promote",
                 ),
-                const SidebarItemContainer(
+                SidebarItemContainer(
                   icon: FontAwesomeIcons.prescription,
                   text: "Demo",
                 ),
-                const SidebarItemContainer(
+                SidebarItemContainer(
                   icon: FontAwesomeIcons.prescription,
                   text: "Demo",
                 ),
